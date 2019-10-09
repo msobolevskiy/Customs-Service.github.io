@@ -1,0 +1,7 @@
+
+  @mixin aftersize($width, $height) {
+    content: '';
+    width: $width;
+    height: $height;
+}
+

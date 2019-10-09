@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="helpers/_reset.css">
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" defer></script>
+    <script src="helpers/comon.js" defer></script>
+    <script src="js/jquery-3.3.1.min.js" defer></script>
+    <script src="js/template.js" defer></script>
+</head>
+
+<body>
+    <header>
+		<div class="content header">
+			<div class="header__logo">
+				<img src="images/logo.png">
+			</div>
+			<div class="header__list">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="inform.html">Полезная информация</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="kontakty.html">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="mobile-menu-button">
+				<i class="fas fa-bars"></i>
+			</div>
+			<div class="mobile-menu">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="inform.html">Полезная информация</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="kontakty.html">Контакты</a></li>
+				</ul>
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+	</header>
+
+    <main>
+        <div>
+            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=jQuery.fn.lpMapInit" async></script>
+            <div id="map"></div>
+        </div>
+        <div class="content">
+            <div class="kontakty">
+                <div class="kontakty__left">
+                    <h2>Отправить письмо!</h2>
+                    <div class="kontakty__left__element">
+                        <div>Имя</div>
+                        <input type="text" name="name" maxlength="50">
+                    </div>
+                    <div class="kontakty__left__element">
+                        <div>Телефон</div>
+                        <input>
+                    </div>
+                    <div class="kontakty__left__element">
+                        <div>Email</div>
+                        <input>
+                    </div>
+                    <div class="kontakty__left__element">
+                        <div>Сообщение</div>
+                        <textarea name="message" maxlength="500"> </textarea>
+                    </div>
+                    <div class="kontakty__left__element">
+                        <div></div>
+                        <div class="kontakty__left__element__button">
+                            <a href="#">отправить сообщение</a>
+                        </div>
+                    </div>
+                    <!-- <div class="kontakty__left__button">
+                            <a href="#">Подробнее</a>
+                        </div> -->
+                </div>
+                <div class="kontakty__right">
+                    <h3>Информация</h3>
+                    <p>
+                        <h4>Телефоны:</h4><br/>
+                        факс: +375(17) 507 66 38<br />
+                        офис: +375(17) 541 81 44<br />
+                        офис: +375(17) 510 16 21<br />
+                        офис: +375(17) 510 32 60<br />
+                        офис: +375(44) 599 29 98<br />
+                        <br />
+                        <h4>E-mail:</h4> <br/>info@customs-service.by<br /><br/>
+                        <h4>Офис:</h4> <br/>г.Минск, ООО "Кастом-Сервис", таможенный терминал «ОЗЕРЦО-ЛОГИСТИК»,
+                        Меньковский тракт,8, офис - 330<br /><br />
+                        <h4>Почтовый адрес:</h4> <br/>Республика Беларусь, 223021, Минский р-н П/О «ОЗЕРЦО» а/я
+                        9<br/><br/>
+                        <h4>Координаты GPS:</h4><br />
+                        Широта: 53°50′819″N (53.847360)<br />
+                        Долгота: 27°24′944″E (27.415456)<br />
+                        <br />
+                        <h4>Время работы:</h4><br />
+                        пн-пт 9:00–20:00
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="content footer">
+            <div class="footer__logo">
+                <h3>ООО «Кастом-Сервис»</h3>
+                <img src="images/logo.png">
+                <p>г.Минск, ООО "Кастом-Сервис", таможенный терминал
+                    «ОЗЕРЦО-ЛОГИСТИК», Меньковский тракт,8
+                    , офис - 330</p>
+            </div>
+            <div class="footer__info">
+                <h3>Контакты</h3>
+                <p>+375 17 510 16 21<br>
+                    +375 44 599 29 98<br><br>
+                    e-mail: info@customs-service.by
+                </p>
+                <ul>
+                    <li><img src="images/footer/mail.png"></li>
+                    <li><img src="images/footer/google.png"></li>
+                    <li><img src="images/footer/facebook.png"></li>
+                    <li><img src="images/footer/twitter.png"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

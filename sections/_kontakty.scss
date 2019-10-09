@@ -1,0 +1,154 @@
+#map {
+    height: 600px;
+}
+
+.kontakty {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 100px;
+
+    &__left {
+        width: 60%;
+        margin-bottom: 100px;
+
+        & h2 {
+            font-family: Hind, sans-serif;
+            color: #5c5c5e;
+            font-size: 25px;
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            padding-left: 40px;
+            border-bottom: 1px solid #a6a7aa;
+        }
+
+        &__element {
+            display: inline-block;
+            text-align: left;
+            width: 100%;
+            display: flex;
+            margin: 25px 0px;
+
+            & div {
+                width: 28%;
+                font-family: Hind, sans-serif;
+                color: #a6a7aa;
+                font-size: 18px;
+                line-height: 18px;
+            }
+
+            & input {
+                width: 50%;
+                background-color: #fff;
+                border: 1px solid #e1e1e1;
+                max-width: 300px;
+                height: 40px;
+                margin: 0;
+                padding: 4px 10px;
+
+                &:focus {
+                    box-shadow: 0 0 6px #e3ee85;
+                }
+
+            }
+
+            & textarea {
+                width: 50%;
+                background-color: #fff;
+                border: 1px solid #e1e1e1;
+                max-width: 300px;
+                height: 150px;
+                margin: 0;
+                padding: 4px 10px;
+
+                &:focus {
+                    box-shadow: 0 0 6px #e3ee85;
+                }
+            }
+
+            &__button {
+                width: 100%;
+                margin-top: 25px;
+
+                & a {
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    width: 280px;
+                    text-align: center;
+                    background: green;
+                    padding: 17px 0px;
+                    text-decoration: none;
+                    -webkit-border-radius: 25px;
+                    border-radius: 25px;
+                    color: #fff;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+
+
+        }
+
+    }
+
+    &__right {
+        width: 40%;
+        font-family: Hind, sans-serif;
+        color: #a6a7aa;
+        font-size: 18px;
+
+
+
+        & h3 {
+            font-family: Hind, sans-serif;
+            color: #5c5c5e;
+            font-size: 25px;
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            padding-left: 40px;
+            border-bottom: 1px solid #a6a7aa;
+        }
+
+        & h4 {
+            font-family: Hind, sans-serif;
+            color: #5c5c5e;
+            font-size: 22px;
+
+        }
+
+
+    }
+}
+
+@media (max-width: 670px) {
+    .kontakty {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        &__left {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            & div {
+                margin-left: 15px;
+            }
+            &__element__button a {
+                margin-left: 0px;
+                width: 150px;
+            }
+        }
+
+        &__right {
+           
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    #map {
+        height: 300px;
+    }
+}

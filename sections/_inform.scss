@@ -1,0 +1,110 @@
+.inform {
+    &__color {
+        background: #fafafa;
+    }
+
+    &__element {
+        width: 100%;
+        height: auto;
+        padding: 80px 15px;
+
+        & h2 {
+            font-size: 22px;
+            font-family: Hind, sans-serif;
+            color: #515769;
+            padding-bottom: 30px;
+
+        }
+
+        & p {
+            font-size: 21px;
+            color: #a6a7aa;
+            width: 540px;
+        }
+    }
+
+    &__element1 {
+        position: relative;
+
+        &::after {
+            @include aftersize(393px, 335px);
+            background-image: url(./images/inform-man.jpg);
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__element2 {
+        position: relative;
+
+        &::after {
+            @include aftersize(393px, 335px);
+            background-image: url(images/service-el2.jpg);
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__element3 {
+        position: relative;
+
+        &::after {
+            @include aftersize(393px, 335px);
+            background-image: url(images/inform-el3.jpg);
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__element4 {
+        position: relative;
+
+        &::after {
+            @include aftersize(393px, 335px);
+            background-image: url(images/inform-el4.jpg);
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+@media (max-width: 1029px) {
+    .inform ::after {
+        display: none;
+    }
+
+    .inform__element {
+        p {
+            width: 100%;
+            padding: 0px 25px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
+}
